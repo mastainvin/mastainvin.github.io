@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta name="generator" content="Hugo 0.150.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My New Hugo Site</title>
+<meta name="description" content="">
+
+
+<link rel="icon" type="image/svg+xml" href="/">
+
+
+<meta property="og:title" content="My New Hugo Site">
+<meta property="og:description" content="">
+<meta property="og:image" content="http://localhost:1313/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:1313/">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="My New Hugo Site">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="http://localhost:1313/">
+
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/animations.css">
+</head>
+<body><header class="navbar" id="navbar">
+  <div class="container flex items-center justify-between" style="height: 100%;">
+    <a href="#top" class="font-display font-bold text-xl text-foreground transition-colors hover:text-primary" style="letter-spacing: 0.025em;">
+       
+    </a>
+
+    
+    <nav class="hidden md:flex items-center gap-8" style="display: none;" id="desktop-nav">
+      <button class="nav-link" data-scroll="about">About</button>
+      <button class="nav-link" data-scroll="experience">Experience</button>
+      <button class="nav-link" data-scroll="skills">Skills</button>
+      <button class="nav-link" data-scroll="education">Education</button>
+      <button class="nav-link" data-scroll="contact">Contact</button>
+      <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);" data-scroll="contact">
+        Let's Talk
+      </a>
+    </nav>
+
+    
+    <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu" aria-expanded="false" style="display: none; padding: 0.5rem; border-radius: 0.375rem; border: none; background: none; color: hsl(var(--foreground)); cursor: pointer;">
+      <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <svg class="icon-lg" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+</header>
+
+
+<div class="mobile-backdrop" id="mobile-backdrop"></div>
+
+
+<nav class="mobile-menu" id="mobile-menu">
+  <button class="mobile-nav-link" data-scroll="about">About</button>
+  <button class="mobile-nav-link" data-scroll="experience">Experience</button>
+  <button class="mobile-nav-link" data-scroll="skills">Skills</button>
+  <button class="mobile-nav-link" data-scroll="education">Education</button>
+  <button class="mobile-nav-link" data-scroll="contact">Contact</button>
+  <div style="margin-top: 0.5rem; margin-bottom: 0.25rem; padding: 0 0.75rem;">
+    <a href="#contact" class="btn btn-primary w-full" data-scroll="contact" style="font-size: 0.875rem;">Let's Talk</a>
+  </div>
+</nav>
+
+<div id="contact-fab-popover" class="fab-popover">
+  <p class="font-semibold text-sm mb-3 text-foreground">Get in touch</p>
+  <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+    <a href="mailto:?subject=Portfolio%20Inquiry" class="flex items-center gap-3 p-3 rounded-lg transition-colors" style="border: 1px solid hsl(var(--border)); background: hsl(var(--muted) / 0.3);">
+      <svg class="icon-md text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      <div>
+        <p class="text-xs text-muted">Email</p>
+        <p class="text-sm font-medium text-foreground"></p>
+      </div>
+    </a>
+    <a href="" target="_blank" rel="noreferrer" class="flex items-center gap-3 p-3 rounded-lg transition-colors" style="border: 1px solid hsl(var(--border)); background: hsl(var(--muted) / 0.3);">
+      <svg class="icon-md text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+      <div>
+        <p class="text-xs text-muted">LinkedIn</p>
+        <p class="text-sm font-medium text-foreground">Connect</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+<button id="contact-fab" class="fab" aria-label="Contact" aria-expanded="false">
+  <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+</button>
+<main><section id="top" class="hero">
+  <div class="hero-bg">
+    <img src="/" alt="Background">
+  </div>
+
+  <div class="container" style="max-width: 80rem;">
+    <div class="hero-content">
+      
+      <div class="fade-in flex-1" style="text-align: center;">
+        <div class="location-tag mb-6">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          
+        </div>
+
+        <h1 style="font-size: clamp(2.25rem, 5vw, 4.5rem); font-weight: 700; margin-bottom: 1.5rem;">
+          Hi, I'm <span class="text-primary italic" style="font-size: clamp(2.5rem, 5.5vw, 4.375rem);"></span>.
+        </h1>
+
+        <p class="text-muted" style="font-size: clamp(1.125rem, 2vw, 1.375rem); font-weight: 300; margin-bottom: 2rem; max-width: 42rem; margin-left: auto; margin-right: auto;">
+          
+        </p>
+
+        <div class="flex flex-col gap-4 items-center" style="flex-wrap: wrap;">
+          <div class="flex gap-4 items-center" style="flex-wrap: wrap; justify-content: center;">
+            <a href="#experience" class="btn btn-primary btn-lg" data-scroll="experience">
+              View My Work
+              <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline btn-lg" data-scroll="contact">
+              Get in Touch
+            </a>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-6 mt-10 text-muted">
+          <a href="mailto:?subject=Portfolio%20Inquiry" class="flex items-center gap-2 transition-colors hover:text-primary">
+            <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span class="text-sm font-medium">Email</span>
+          </a>
+          <a href="" target="_blank" rel="noreferrer" class="flex items-center gap-2 transition-colors hover:text-primary">
+            <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            <span class="text-sm font-medium">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="fade-in-none hero-photo delay-2">
+        <img src="/" alt=" ">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about" class="section bg-muted-30">
+  <div class="container container-narrow mx-auto" style="max-width: 56rem; text-align: center;">
+    <div class="fade-in">
+      <h2 class="section-header justify-center mb-8" style="font-size: 1.875rem;">About Me</h2>
+      <div class="text-lg text-muted leading-relaxed">
+        
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="section bg-navy">
+  <div class="container container-xs mx-auto" style="max-width: 42rem; text-align: center;">
+    <div class="fade-in">
+      <h2 class="text-white font-display font-bold mb-5" style="font-size: clamp(2.25rem, 4vw, 3rem);">Let's get in contact</h2>
+      <p class="text-lg text-white-70 leading-relaxed mb-3">
+        Looking for a cyber security researcher? Let's get in contact.
+      </p>
+      <p class="text-base font-medium text-white-60 mb-12">
+        The best way to reach me is via email or LinkedIn. Feel free to reach out to me for any inquiries or opportunities.
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 1rem; text-align: left; margin-bottom: 2.5rem;">
+        <a href="mailto:?subject=Portfolio%20Inquiry" class="contact-link">
+          <div class="contact-icon">
+            <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div>
+            <p class="text-sm font-medium text-white-50">Email</p>
+            <p class="font-semibold text-white"></p>
+          </div>
+        </a>
+
+        <a href="" target="_blank" rel="noreferrer" class="contact-link">
+          <div class="contact-icon">
+            <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div>
+            <p class="text-sm font-medium text-white-50">LinkedIn</p>
+            <p class="font-semibold text-white flex items-center gap-2">
+              
+              <svg style="width: 0.875rem; height: 0.875rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <a href="/" download="__Resume.pdf" class="inline-flex items-center gap-2 text-sm font-medium text-white-70 transition-colors" style="border: 1px solid rgba(255,255,255,0.2); border-radius: 9999px; padding: 0.625rem 1.25rem;">
+        <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Resume
+      </a>
+    </div>
+  </div>
+</section>
+</main><footer style="padding: 2rem 0; background-color: hsl(var(--foreground)); color: hsl(var(--background)); border-top: 1px solid hsl(var(--border) / 0.1);">
+  <div class="container flex items-center justify-between" style="flex-wrap: wrap; gap: 1rem; max-width: 80rem;">
+    <p class="text-sm" style="opacity: 0.6;">
+      &copy; 2026  . All rights reserved.
+    </p>
+    <a href="#top" class="text-sm transition-colors" style="opacity: 0.8;" data-scroll="top">
+      Back to Top
+    </a>
+  </div>
+</footer>
+
+  
+  
+  
+  <script defer src="/js/scroll-reveal.js"></script>
+  <script defer src="/js/nav.js"></script>
+  <script defer src="/js/skills-toggle.js"></script>
+  <script defer src="/js/contact-fab.js"></script>
+</body>
+</html>
