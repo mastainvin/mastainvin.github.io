@@ -1,0 +1,9 @@
+# Spoken languages with a proficiency label and a percentage (0-100) for the bar.
+- name: "French"
+  level: "Native"
+  percent: 100
+
+- name: "English"
+  level: "Intermediate"
+  percent: 75
+

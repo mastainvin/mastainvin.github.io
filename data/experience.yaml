@@ -1,0 +1,50 @@
+# Work experience, newest first. Each entry renders as a timeline card.
+# `context`, `projects`, `publications` and `media_mentions` are optional.
+# `publications` lists ids from publications.yaml.
+- company: "INRIA"
+  title: "PhD Student"
+  period: "Sep 2025 - Present"
+  context: "I'm currently working Under the supervision of Christophe Alias (ENS de Lyon - France) and Ali Jannesari (Iowa State University - USA). My thesis project aims to analyze parallel OpenMP programs."
+  bullets:
+    - "Check equivalence between a sequential program and its parallel version."
+    - "Find how to repair a non-equivalent parallel program."
+    - "This project is based on the Polyhedral model, initially used to analyse loop nests, we adapt it to analyze parallel programs."
+  # projects:
+  #   - title: "Sample Project"
+  #     desc: "A short one-line description of what this project does."
+  #     tags:
+  #       - "Go"
+  #       - "Distributed Systems"
+  #   - title: "Another Project"
+  #     desc: "Another optional project to show under this role."
+  #     tags:
+  #       - "TypeScript"
+  #       - "React"
+  # media_mentions:
+  #   - publication: "Example News"
+  #     article_title: "How Example Corp shipped X"
+  #     excerpt: "A short quote or summary of the article."
+  #     url: "https://example.com/article"
+
+- company: "SAP"
+  title: "Internship - Quality Assurance & Automation Engineer"
+  period: "May 2024 - Oct 2024"
+  context: "SAP is one of the main software company specialized in enterprise resource planning (ERP). I worked within the SAP Analytic Cloud."
+  bullets:
+    - "Maintenance and addition of automated tests for various projects using an internal Selenium-based framework."
+    - "Creation of a pipeline enabling the automation of test environment creation and test execution."
+    - "Ticket writing and proactive communication with developers to follow up on bug reports."
+    - "Experimentation with the Behavior Driven Development (BDD) methodology to assess its impact on improving the quality of automated tests."
+    - "Analysis of BDD prototyping results to optimize testing processes and team collaboration."
+
+- company: "École de technologie supérieure (ÉTS)"
+  title: "Student researcher - Game testing framework development"
+  period: "May 2023 - July 2023"
+  context: "As a student researcher at ÉTS (École de Technologie Supérieure), working under the guidance of Fabio Petrillo and Cristiano Politowski, I am actively involved in the exciting field of video game balance testing using reinforcement learning techniques. My key responsibility is to design and implement a comprehensive framework enabling developers to easily evaluate and test the balance of their games."
+  bullets:
+    - "I did a state of art in Reinforcement learning and game testing."
+    - "Developed a software architecture implementing the Behavior-Driven Development (BDD) approach applied to test writing for video games."
+    - "Game development and testing using the framework."
+  publications:
+    - "gas2026"
+    - "gas2024"

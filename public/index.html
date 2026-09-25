@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.150.1"><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.150.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My New Hugo Site</title>
-<meta name="description" content="">
+<title>Vincent Mastain</title>
+<meta name="description" content="Vincent Mastain — PhD Student in Polyhedral Compilation">
 
 
-<link rel="icon" type="image/svg+xml" href="/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
 
-<meta property="og:title" content="My New Hugo Site">
-<meta property="og:description" content="">
-<meta property="og:image" content="https://example.org/">
+<meta property="og:title" content="Vincent Mastain">
+<meta property="og:description" content="Vincent Mastain — PhD Student in Polyhedral Compilation">
+<meta property="og:image" content="http://localhost:1313/opengraph.jpg">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://example.org/">
+<meta property="og:url" content="http://localhost:1313/">
 
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="My New Hugo Site">
-<meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://example.org/">
+<meta name="twitter:title" content="Vincent Mastain">
+<meta name="twitter:description" content="Vincent Mastain — PhD Student in Polyhedral Compilation">
+<meta name="twitter:image" content="http://localhost:1313/opengraph.jpg">
 
 
 
@@ -31,13 +31,14 @@
 <body><header class="navbar" id="navbar">
   <div class="container flex items-center justify-between" style="height: 100%;">
     <a href="#top" class="font-display font-bold text-xl text-foreground transition-colors hover:text-primary" style="letter-spacing: 0.025em;">
-       
+      Vincent Mastain
     </a>
 
     
     <nav class="hidden md:flex items-center gap-8" style="display: none;" id="desktop-nav">
       <button class="nav-link" data-scroll="about">About</button>
       <button class="nav-link" data-scroll="experience">Experience</button>
+      <button class="nav-link" data-scroll="publications">Publications</button>
       <button class="nav-link" data-scroll="skills">Skills</button>
       <button class="nav-link" data-scroll="education">Education</button>
       <button class="nav-link" data-scroll="contact">Contact</button>
@@ -68,6 +69,7 @@
 <nav class="mobile-menu" id="mobile-menu">
   <button class="mobile-nav-link" data-scroll="about">About</button>
   <button class="mobile-nav-link" data-scroll="experience">Experience</button>
+  <button class="mobile-nav-link" data-scroll="publications">Publications</button>
   <button class="mobile-nav-link" data-scroll="skills">Skills</button>
   <button class="mobile-nav-link" data-scroll="education">Education</button>
   <button class="mobile-nav-link" data-scroll="contact">Contact</button>
@@ -79,14 +81,14 @@
 <div id="contact-fab-popover" class="fab-popover">
   <p class="font-semibold text-sm mb-3 text-foreground">Get in touch</p>
   <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-    <a href="mailto:?subject=Portfolio%20Inquiry" class="flex items-center gap-3 p-3 rounded-lg transition-colors" style="border: 1px solid hsl(var(--border)); background: hsl(var(--muted) / 0.3);">
+    <a href="mailto:vincentmastain@gmail.com?subject=Portfolio%20Inquiry" class="flex items-center gap-3 p-3 rounded-lg transition-colors" style="border: 1px solid hsl(var(--border)); background: hsl(var(--muted) / 0.3);">
       <svg class="icon-md text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
       <div>
         <p class="text-xs text-muted">Email</p>
-        <p class="text-sm font-medium text-foreground"></p>
+        <p class="text-sm font-medium text-foreground">vincentmastain@gmail.com</p>
       </div>
     </a>
-    <a href="" target="_blank" rel="noreferrer" class="flex items-center gap-3 p-3 rounded-lg transition-colors" style="border: 1px solid hsl(var(--border)); background: hsl(var(--muted) / 0.3);">
+    <a href="https://www.linkedin.com/in/vincent-mastain/" target="_blank" rel="noreferrer" class="flex items-center gap-3 p-3 rounded-lg transition-colors" style="border: 1px solid hsl(var(--border)); background: hsl(var(--muted) / 0.3);">
       <svg class="icon-md text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
       <div>
         <p class="text-xs text-muted">LinkedIn</p>
@@ -101,7 +103,7 @@
 </button>
 <main><section id="top" class="hero">
   <div class="hero-bg">
-    <img src="/" alt="Background">
+    <img src="/images/hero-bg.png" alt="Background">
   </div>
 
   <div class="container" style="max-width: 80rem;">
@@ -110,15 +112,15 @@
       <div class="fade-in flex-1" style="text-align: center;">
         <div class="location-tag mb-6">
           <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          
+          Lyon, France
         </div>
 
         <h1 style="font-size: clamp(2.25rem, 5vw, 4.5rem); font-weight: 700; margin-bottom: 1.5rem;">
-          Hi, I'm <span class="text-primary italic" style="font-size: clamp(2.5rem, 5.5vw, 4.375rem);"></span>.
+          Hi, I'm <span class="text-primary italic" style="font-size: clamp(2.5rem, 5.5vw, 4.375rem);">Vincent</span>.
         </h1>
 
         <p class="text-muted" style="font-size: clamp(1.125rem, 2vw, 1.375rem); font-weight: 300; margin-bottom: 2rem; max-width: 42rem; margin-left: auto; margin-right: auto;">
-          
+          PhD Student
         </p>
 
         <div class="flex flex-col gap-4 items-center" style="flex-wrap: wrap;">
@@ -134,11 +136,11 @@
         </div>
 
         <div class="flex items-center justify-center gap-6 mt-10 text-muted">
-          <a href="mailto:?subject=Portfolio%20Inquiry" class="flex items-center gap-2 transition-colors hover:text-primary">
+          <a href="mailto:vincentmastain@gmail.com?subject=Portfolio%20Inquiry" class="flex items-center gap-2 transition-colors hover:text-primary">
             <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             <span class="text-sm font-medium">Email</span>
           </a>
-          <a href="" target="_blank" rel="noreferrer" class="flex items-center gap-2 transition-colors hover:text-primary">
+          <a href="https://www.linkedin.com/in/vincent-mastain/" target="_blank" rel="noreferrer" class="flex items-center gap-2 transition-colors hover:text-primary">
             <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
             <span class="text-sm font-medium">LinkedIn</span>
           </a>
@@ -147,7 +149,7 @@
 
       
       <div class="fade-in-none hero-photo delay-2">
-        <img src="/" alt=" ">
+        <img src="/images/profile.png" alt="Vincent Mastain">
       </div>
     </div>
   </div>
@@ -157,8 +159,533 @@
     <div class="fade-in">
       <h2 class="section-header justify-center mb-8" style="font-size: 1.875rem;">About Me</h2>
       <div class="text-lg text-muted leading-relaxed">
-        
+        <p>Hi, I&rsquo;m Vincent. I am a Phd Student working at the LIP (ENS Lyon) on Scalable translation validation for Machine learning and HPC.</p>
+
       </div>
+    </div>
+  </div>
+</section>
+<section id="experience" class="section bg-navy">
+  <div class="container" style="max-width: 64rem;">
+    <div class="fade-in">
+      <h2 class="section-header text-white mb-12">
+        <span class="section-bar section-bar-wide"></span>
+        Experience
+      </h2>
+
+      <div class="relative">
+        
+        <div class="timeline-line" style="display: none;" id="timeline-line"></div>
+
+        <div style="display: flex; flex-direction: column; gap: 2.5rem;">
+          
+          <div class="fade-in delay-1">
+            <div class="flex gap-6" style="gap: 1.5rem;">
+              
+              <div class="shrink-0" style="width: 60px; display: flex; flex-direction: column; align-items: center; padding-top: 0.5rem;">
+                <div class="timeline-dot"></div>
+              </div>
+
+              
+              <div class="flex-1" style="min-width: 0; padding-bottom: 0.5rem;">
+                <div class="mb-3">
+                  <h3 class="text-lg font-bold text-white">INRIA</h3>
+                  <p class="text-sm font-medium text-white-70" style="margin-top: 0.125rem;">PhD Student</p>
+                  <p class="text-xs text-white-50" style="margin-top: 0.25rem;">Sep 2025 - Present</p>
+                </div>
+
+                <div class="card p-5">
+                  
+                  <p class="context-quote">I&#39;m currently working Under the supervision of Christophe Alias (ENS de Lyon - France) and Ali Jannesari (Iowa State University - USA). My thesis project aims to analyze parallel OpenMP programs.</p>
+                  
+
+                  <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                    
+                    <li class="flex items-start gap-3">
+                      <svg class="icon-sm shrink-0" style="margin-top: 0.125rem; color: hsl(var(--primary) / 0.6);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                      <span class="text-sm text-muted leading-relaxed">Check equivalence between a sequential program and its parallel version.</span>
+                    </li>
+                    
+                    <li class="flex items-start gap-3">
+                      <svg class="icon-sm shrink-0" style="margin-top: 0.125rem; color: hsl(var(--primary) / 0.6);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                      <span class="text-sm text-muted leading-relaxed">Find how to repair a non-equivalent parallel program.</span>
+                    </li>
+                    
+                    <li class="flex items-start gap-3">
+                      <svg class="icon-sm shrink-0" style="margin-top: 0.125rem; color: hsl(var(--primary) / 0.6);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                      <span class="text-sm text-muted leading-relaxed">This project is based on the Polyhedral model, initially used to analyse loop nests, we adapt it to analyze parallel programs.</span>
+                    </li>
+                    
+                  </ul>
+
+                  
+
+                  
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="fade-in delay-2">
+            <div class="flex gap-6" style="gap: 1.5rem;">
+              
+              <div class="shrink-0" style="width: 60px; display: flex; flex-direction: column; align-items: center; padding-top: 0.5rem;">
+                <div class="timeline-dot"></div>
+              </div>
+
+              
+              <div class="flex-1" style="min-width: 0; padding-bottom: 0.5rem;">
+                <div class="mb-3">
+                  <h3 class="text-lg font-bold text-white">SAP</h3>
+                  <p class="text-sm font-medium text-white-70" style="margin-top: 0.125rem;">Internship - Quality Assurance &amp; Automation Engineer</p>
+                  <p class="text-xs text-white-50" style="margin-top: 0.25rem;">May 2024 - Oct 2024</p>
+                </div>
+
+                <div class="card p-5">
+                  
+                  <p class="context-quote">SAP is one of the main software company specialized in enterprise resource planning (ERP). I worked within the SAP Analytic Cloud.</p>
+                  
+
+                  <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                    
+                    <li class="flex items-start gap-3">
+                      <svg class="icon-sm shrink-0" style="margin-top: 0.125rem; color: hsl(var(--primary) / 0.6);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                      <span class="text-sm text-muted leading-relaxed">Maintenance and addition of automated tests for various projects using an internal Selenium-based framework.</span>
+                    </li>
+                    
+                    <li class="flex items-start gap-3">
+                      <svg class="icon-sm shrink-0" style="margin-top: 0.125rem; color: hsl(var(--primary) / 0.6);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                      <span class="text-sm text-muted leading-relaxed">Creation of a pipeline enabling the automation of test environment creation and test execution.</span>
+                    </li>
+                    
+                    <li class="flex items-start gap-3">
+                      <svg class="icon-sm shrink-0" style="margin-top: 0.125rem; color: hsl(var(--primary) / 0.6);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                      <span class="text-sm text-muted leading-relaxed">Ticket writing and proactive communication with developers to follow up on bug reports.</span>
+                    </li>
+                    
+                    <li class="flex items-start gap-3">
+                      <svg class="icon-sm shrink-0" style="margin-top: 0.125rem; color: hsl(var(--primary) / 0.6);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                      <span class="text-sm text-muted leading-relaxed">Experimentation with the Behavior Driven Development (BDD) methodology to assess its impact on improving the quality of automated tests.</span>
+                    </li>
+                    
+                    <li class="flex items-start gap-3">
+                      <svg class="icon-sm shrink-0" style="margin-top: 0.125rem; color: hsl(var(--primary) / 0.6);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                      <span class="text-sm text-muted leading-relaxed">Analysis of BDD prototyping results to optimize testing processes and team collaboration.</span>
+                    </li>
+                    
+                  </ul>
+
+                  
+
+                  
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="fade-in delay-3">
+            <div class="flex gap-6" style="gap: 1.5rem;">
+              
+              <div class="shrink-0" style="width: 60px; display: flex; flex-direction: column; align-items: center; padding-top: 0.5rem;">
+                <div class="timeline-dot"></div>
+              </div>
+
+              
+              <div class="flex-1" style="min-width: 0; padding-bottom: 0.5rem;">
+                <div class="mb-3">
+                  <h3 class="text-lg font-bold text-white">École de technologie supérieure (ÉTS)</h3>
+                  <p class="text-sm font-medium text-white-70" style="margin-top: 0.125rem;">Student researcher - Game testing framework development</p>
+                  <p class="text-xs text-white-50" style="margin-top: 0.25rem;">May 2023 - July 2023</p>
+                </div>
+
+                <div class="card p-5">
+                  
+                  <p class="context-quote">As a student researcher at ÉTS (École de Technologie Supérieure), working under the guidance of Fabio Petrillo and Cristiano Politowski, I am actively involved in the exciting field of video game balance testing using reinforcement learning techniques. My key responsibility is to design and implement a comprehensive framework enabling developers to easily evaluate and test the balance of their games.</p>
+                  
+
+                  <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                    
+                    <li class="flex items-start gap-3">
+                      <svg class="icon-sm shrink-0" style="margin-top: 0.125rem; color: hsl(var(--primary) / 0.6);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                      <span class="text-sm text-muted leading-relaxed">I did a state of art in Reinforcement learning and game testing.</span>
+                    </li>
+                    
+                    <li class="flex items-start gap-3">
+                      <svg class="icon-sm shrink-0" style="margin-top: 0.125rem; color: hsl(var(--primary) / 0.6);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                      <span class="text-sm text-muted leading-relaxed">Developed a software architecture implementing the Behavior-Driven Development (BDD) approach applied to test writing for video games.</span>
+                    </li>
+                    
+                    <li class="flex items-start gap-3">
+                      <svg class="icon-sm shrink-0" style="margin-top: 0.125rem; color: hsl(var(--primary) / 0.6);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                      <span class="text-sm text-muted leading-relaxed">Game development and testing using the framework.</span>
+                    </li>
+                    
+                  </ul>
+
+                  
+
+                  
+                  <div style="margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid hsl(var(--border) / 0.5);">
+                    <p class="text-xs font-bold uppercase tracking-widest text-primary mb-3">Publications</p>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                      
+                      
+                      <a href="https://doi.org/10.1145/3786171.3788378" target="_blank" rel="noreferrer" class="media-mention">
+                        <div class="shrink-0" style="margin-top: 0.125rem;">
+                          <span class="pub-type pub--workshop">Workshop</span>
+                        </div>
+                        <div style="min-width: 0;">
+                          <p class="text-sm font-semibold text-foreground leading-relaxed mb-1">Enhancing Automated Video Game Regression Testing through Behavior-Driven Development and Imitation Learning</p>
+                          <p class="text-xs text-muted leading-relaxed">2026 ACM/IEEE 10th International Workshop on Games and Software Engineering (GAS) · 2026</p>
+                        </div>
+                      </a>
+                      
+                      
+                      
+                      <a href="https://doi.org/10.1145/3643658.3643919" target="_blank" rel="noreferrer" class="media-mention">
+                        <div class="shrink-0" style="margin-top: 0.125rem;">
+                          <span class="pub-type pub--workshop">Workshop</span>
+                        </div>
+                        <div style="min-width: 0;">
+                          <p class="text-sm font-semibold text-foreground leading-relaxed mb-1">A Behavior-driven Development and Reinforcement Learning approach for videogame automated testing</p>
+                          <p class="text-xs text-muted leading-relaxed">2024 IEEE/ACM 8th International Workshop on Games and Software Engineering (GAS) · 2024</p>
+                        </div>
+                      </a>
+                      
+                      
+                    </div>
+                  </div>
+                  
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="publications" class="section bg-muted-30">
+  <div class="container" style="max-width: 64rem;">
+    <div class="fade-in">
+      <h2 class="section-header mb-3">
+        <span class="section-bar" style="width: 3rem;"></span>
+        Publications
+      </h2>
+      <p class="text-sm text-muted mb-10 ml-12">
+        Peer-reviewed papers published in journals, conferences and workshops.
+      </p>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="pub-group pub--workshop">
+        <div class="pub-group-head">
+          <h3 class="pub-group-title">Workshop Papers</h3>
+          <span class="pub-group-count">2</span>
+          <span class="pub-group-rule"></span>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          
+          <div class="fade-in delay-1">
+          <article class="pub-item">
+            <div class="pub-year">2026</div>
+            <div style="min-width: 0; flex: 1;">
+              <h4 class="pub-title">
+                <a href="https://doi.org/10.1145/3786171.3788378" target="_blank" rel="noopener noreferrer">Enhancing Automated Video Game Regression Testing through Behavior-Driven Development and Imitation Learning</a>
+              </h4>
+              
+              <p class="pub-venue">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                <span>2026 ACM/IEEE 10th International Workshop on Games and Software Engineering (GAS)</span>
+              </p>
+              
+
+              
+              <div class="pub-links">
+                
+                <a href="https://doi.org/10.1145/3786171.3788378" target="_blank" rel="noopener noreferrer" class="pub-link">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                  DOI
+                </a>
+                
+                
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3786171.3788378" target="_blank" rel="noopener noreferrer" class="pub-link">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                  PDF
+                </a>
+                
+              </div>
+              
+            </div>
+          </article>
+          </div>
+          
+          <div class="fade-in delay-2">
+          <article class="pub-item">
+            <div class="pub-year">2024</div>
+            <div style="min-width: 0; flex: 1;">
+              <h4 class="pub-title">
+                <a href="https://doi.org/10.1145/3643658.3643919" target="_blank" rel="noopener noreferrer">A Behavior-driven Development and Reinforcement Learning approach for videogame automated testing</a>
+              </h4>
+              
+              <p class="pub-venue">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                <span>2024 IEEE/ACM 8th International Workshop on Games and Software Engineering (GAS)</span>
+              </p>
+              
+
+              
+              <div class="pub-links">
+                
+                <a href="https://doi.org/10.1145/3643658.3643919" target="_blank" rel="noopener noreferrer" class="pub-link">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                  DOI
+                </a>
+                
+                
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3643658.3643919" target="_blank" rel="noopener noreferrer" class="pub-link">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                  PDF
+                </a>
+                
+              </div>
+              
+            </div>
+          </article>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</section>
+<section id="skills" class="section bg-muted-20" style="padding-top: 4rem; padding-bottom: 4rem;">
+  <div class="container" style="max-width: 64rem;">
+    <div class="fade-in">
+      <h2 class="section-header">
+        <span class="section-bar"></span>
+        Skills &amp; Languages
+      </h2>
+      <p class="text-xs text-muted mt-3 mb-10 ml-12">Click each skill to see how it has been applied.</p>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        
+        <div style="display: flex; flex-direction: column; gap: 1.75rem;">
+          
+          <div data-skill-category="Core Qualifications">
+            <p class="text-muted font-bold uppercase tracking-widest mb-3" style="font-size: 0.625rem; opacity: 0.7;">Core Qualifications</p>
+            <div class="flex flex-wrap gap-2">
+              
+              <button type="button"
+                class="skill-pill"
+                data-skill-name="Problem Solving"
+                data-skill-explanation="The main difficulty during my PhD thesis is to find solutions to problems. With the time constraints and pressure, I am able to accomplish in time the millestones."
+                aria-expanded="false">
+                Problem Solving
+              </button>
+              
+              <button type="button"
+                class="skill-pill"
+                data-skill-name="System Design"
+                data-skill-explanation="I was able to develop scalable and maintanable implementations of the algorithms during my PhD thesis as in my research intership. Also, during the 6 months at SAP I did a new test architecture able to use BDD format."
+                aria-expanded="false">
+                System Design
+              </button>
+              
+            </div>
+            <div class="skill-explanation" data-skill-explanation-box></div>
+          </div>
+          
+          <div data-skill-category="Technical">
+            <p class="text-muted font-bold uppercase tracking-widest mb-3" style="font-size: 0.625rem; opacity: 0.7;">Technical</p>
+            <div class="flex flex-wrap gap-2">
+              
+              <button type="button"
+                class="skill-pill"
+                data-skill-name="Polyhedral Model"
+                data-skill-explanation="My PhD years made my learn a lot about the model: modelization, parallelization and optmization of programs"
+                aria-expanded="false">
+                Polyhedral Model
+              </button>
+              
+              <button type="button"
+                class="skill-pill"
+                data-skill-name="Compilers"
+                data-skill-explanation=""
+                aria-expanded="false">
+                Compilers
+              </button>
+              
+              <button type="button"
+                class="skill-pill"
+                data-skill-name="Python"
+                data-skill-explanation="Xumes"
+                aria-expanded="false">
+                Python
+              </button>
+              
+              <button type="button"
+                class="skill-pill"
+                data-skill-name="C&#43;&#43;"
+                data-skill-explanation="The implementations of my PhD thesis is build within C&#43;&#43;."
+                aria-expanded="false">
+                C&#43;&#43;
+              </button>
+              
+              <button type="button"
+                class="skill-pill"
+                data-skill-name="Clang LLVM"
+                data-skill-explanation="I used the tool to build an OpenMP parser to translate programs into our home made IR."
+                aria-expanded="false">
+                Clang LLVM
+              </button>
+              
+              <button type="button"
+                class="skill-pill"
+                data-skill-name="Docker"
+                data-skill-explanation="Used to containerize and deploy my PhD thesis tools."
+                aria-expanded="false">
+                Docker
+              </button>
+              
+              <button type="button"
+                class="skill-pill"
+                data-skill-name="Git"
+                data-skill-explanation="Used for version control and collaboration in all projects."
+                aria-expanded="false">
+                Git
+              </button>
+              
+            </div>
+            <div class="skill-explanation" data-skill-explanation-box></div>
+          </div>
+          
+        </div>
+
+        
+        <div>
+          <p class="text-muted font-bold uppercase tracking-widest mb-6" style="font-size: 0.625rem; opacity: 0.7;">Language Proficiency</p>
+          <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+            
+            <div class="fade-in">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-sm font-semibold text-foreground">French</span>
+                <span class="text-primary font-medium tracking-wide" style="font-size: 0.6875rem; opacity: 0.7;">Native</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar-fill" style="width: 100%;"></div>
+              </div>
+            </div>
+            
+            <div class="fade-in">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-sm font-semibold text-foreground">English</span>
+                <span class="text-primary font-medium tracking-wide" style="font-size: 0.6875rem; opacity: 0.7;">Intermediate</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="education" class="section bg-background" style="border-top: 1px solid hsl(var(--border) / 0.4);">
+  <div class="container" style="max-width: 80rem;">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+      
+      <div class="fade-in">
+        <h2 class="section-header mb-10">
+          <span class="section-bar"></span>
+          Education
+        </h2>
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          
+          <div class="card p-6 border-l-4" style="border-left: 4px solid hsl(var(--primary));">
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 0.5rem;">
+                <h3 class="font-bold text-lg">PhD Thesis - Scalable Translation Validation for High Performance Computing and Machine Learning</h3>
+                <span class="text-sm font-semibold text-primary" style="white-space: nowrap; background-color: hsl(var(--primary) / 0.05); padding: 0.25rem 0.5rem; border-radius: 0.25rem;">
+                  currently (2028)
+                </span>
+              </div>
+              <p class="text-muted">Ecole Normale Supérieure de Lyon (INRIA)</p>
+            </div>
+          </div>
+          
+          <div class="card p-6 border-l-4" style="border-left: 4px solid hsl(var(--primary));">
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 0.5rem;">
+                <h3 class="font-bold text-lg">Master Degree in Computer Science</h3>
+                <span class="text-sm font-semibold text-primary" style="white-space: nowrap; background-color: hsl(var(--primary) / 0.05); padding: 0.25rem 0.5rem; border-radius: 0.25rem;">
+                  2024
+                </span>
+              </div>
+              <p class="text-muted">CY Tech</p>
+            </div>
+          </div>
+          
+          <div class="card p-6 border-l-4" style="border-left: 4px solid hsl(var(--primary));">
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 0.5rem;">
+                <h3 class="font-bold text-lg">High School Diploma</h3>
+                <span class="text-sm font-semibold text-primary" style="white-space: nowrap; background-color: hsl(var(--primary) / 0.05); padding: 0.25rem 0.5rem; border-radius: 0.25rem;">
+                  2019
+                </span>
+              </div>
+              <p class="text-muted">Lycée Voltaire, Wingles</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      
+      <div class="fade-in delay-2">
+        <h2 class="section-header mb-10">
+          <span class="section-bar"></span>
+          Certifications
+        </h2>
+        <div style="display: flex; flex-direction: column; gap: 2rem;">
+          
+          <div class="cert-group">
+            <div class="cert-dot"></div>
+            <h3 class="text-sm font-bold text-primary uppercase tracking-wide mb-3">2024</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+              
+              <li class="text-muted text-sm" style="background-color: hsl(var(--muted) / 0.4); padding: 0.75rem; border-radius: 0.5rem; border: 1px solid hsl(var(--border) / 0.5);">
+                TOEIC (965 / 990)
+              </li>
+              
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -167,38 +694,38 @@
     <div class="fade-in">
       <h2 class="text-white font-display font-bold mb-5" style="font-size: clamp(2.25rem, 4vw, 3rem);">Let's get in contact</h2>
       <p class="text-lg text-white-70 leading-relaxed mb-3">
-        Looking for a cyber security researcher? Let's get in contact.
+        Looking for a polyhedral compilation researcher? Let's get in contact.
       </p>
       <p class="text-base font-medium text-white-60 mb-12">
         The best way to reach me is via email or LinkedIn. Feel free to reach out to me for any inquiries or opportunities.
       </p>
 
       <div style="display: flex; flex-direction: column; gap: 1rem; text-align: left; margin-bottom: 2.5rem;">
-        <a href="mailto:?subject=Portfolio%20Inquiry" class="contact-link">
+        <a href="mailto:vincentmastain@gmail.com?subject=Portfolio%20Inquiry" class="contact-link">
           <div class="contact-icon">
             <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
           </div>
           <div>
             <p class="text-sm font-medium text-white-50">Email</p>
-            <p class="font-semibold text-white"></p>
+            <p class="font-semibold text-white">vincentmastain@gmail.com</p>
           </div>
         </a>
 
-        <a href="" target="_blank" rel="noreferrer" class="contact-link">
+        <a href="https://www.linkedin.com/in/vincent-mastain/" target="_blank" rel="noreferrer" class="contact-link">
           <div class="contact-icon">
             <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
           </div>
           <div>
             <p class="text-sm font-medium text-white-50">LinkedIn</p>
             <p class="font-semibold text-white flex items-center gap-2">
-              
+              https://www.linkedin.com/in/vincent-mastain/
               <svg style="width: 0.875rem; height: 0.875rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </p>
           </div>
         </a>
       </div>
 
-      <a href="/" download="__Resume.pdf" class="inline-flex items-center gap-2 text-sm font-medium text-white-70 transition-colors" style="border: 1px solid rgba(255,255,255,0.2); border-radius: 9999px; padding: 0.625rem 1.25rem;">
+      <a href="/resume.pdf" download="Vincent_Mastain_Resume.pdf" class="inline-flex items-center gap-2 text-sm font-medium text-white-70 transition-colors" style="border: 1px solid rgba(255,255,255,0.2); border-radius: 9999px; padding: 0.625rem 1.25rem;">
         <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download Resume
       </a>
@@ -208,7 +735,7 @@
 </main><footer style="padding: 2rem 0; background-color: hsl(var(--foreground)); color: hsl(var(--background)); border-top: 1px solid hsl(var(--border) / 0.1);">
   <div class="container flex items-center justify-between" style="flex-wrap: wrap; gap: 1rem; max-width: 80rem;">
     <p class="text-sm" style="opacity: 0.6;">
-      &copy; 2026  . All rights reserved.
+      &copy; 2026 Vincent Mastain. All rights reserved.
     </p>
     <a href="#top" class="text-sm transition-colors" style="opacity: 0.8;" data-scroll="top">
       Back to Top

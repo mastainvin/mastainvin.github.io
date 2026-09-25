@@ -1,0 +1,24 @@
+# Skills grouped by category. Each skill shows its `explanation` when clicked.
+- category: "Core Qualifications"
+  items:
+    - name: "Problem Solving"
+      explanation: "The main difficulty during my PhD thesis is to find solutions to problems. With the time constraints and pressure, I am able to accomplish in time the millestones."
+    - name: "System Design"
+      explanation: "I was able to develop scalable and maintanable implementations of the algorithms during my PhD thesis as in my research intership. Also, during the 6 months at SAP I did a new test architecture able to use BDD format."
+
+- category: "Technical"
+  items:
+    - name: "Polyhedral Model"
+      explanation: "My PhD years made my learn a lot about the model: modelization, parallelization and optmization of programs"
+    - name: "Compilers"
+      explanation: ""  
+    - name: "Python"
+      explanation: "Xumes"
+    - name: "C++"
+      explanation: "The implementations of my PhD thesis is build within C++."
+    - name: "Clang LLVM"
+      explanation: "I used the tool to build an OpenMP parser to translate programs into our home made IR."
+    - name: "Docker"
+      explanation: "Used to containerize and deploy my PhD thesis tools."
+    - name: "Git"
+      explanation: "Used for version control and collaboration in all projects."

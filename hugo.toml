@@ -1,4 +1,25 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://mastainvin.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Vincent Mastain'
 theme = 'kiyomi'
+
+[params]
+  firstName = "Vincent"
+  lastName = "Mastain"
+  tagline = "PhD Student"
+  email = "vincentmastain@gmail.com"
+  linkedin = "https://www.linkedin.com/in/vincent-mastain/"
+  location = "Lyon, France"
+  profileImage = "/images/profile.png"
+  heroBackground = "/images/hero-bg.png"
+  favicon = "/favicon.svg"
+  ogImage = "/opengraph.jpg"
+  resumeFile = "/resume.pdf"
+  description = "Vincent Mastain — PhD Student in Polyhedral Compilation"
+
+disableKinds = ['taxonomy', 'term']
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.128.0"

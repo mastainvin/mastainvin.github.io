@@ -1,0 +1,25 @@
+# Published papers, newest first. Rendered in the Publications section.
+# `type` is one of: "conference", "journal", "workshop".
+# `id` lets an experience entry reference the paper (see experience.yaml).
+# `authors`, `url`, `pdf` and `note` are optional. Your own name is highlighted in the author list.
+- id: "gas2026"
+  type: "workshop"
+  title: "Enhancing Automated Video Game Regression Testing through Behavior-Driven Development and Imitation Learning"
+  venue: "2026 ACM/IEEE 10th International Workshop on Games and Software Engineering (GAS)"
+  year: 2026
+  # authors:
+  #   - "Vincent Mastain"
+  #   - "Co-author"
+  url: "https://doi.org/10.1145/3786171.3788378"
+  pdf: "https://dl.acm.org/doi/pdf/10.1145/3786171.3788378"
+
+- id: "gas2024"
+  type: "workshop"
+  title: "A Behavior-driven Development and Reinforcement Learning approach for videogame automated testing"
+  venue: "2024 IEEE/ACM 8th International Workshop on Games and Software Engineering (GAS)"
+  year: 2024
+  # authors:
+  #   - "Vincent Mastain"
+  #   - "Co-author"
+  url: "https://doi.org/10.1145/3643658.3643919"
+  pdf: "https://dl.acm.org/doi/pdf/10.1145/3643658.3643919"
